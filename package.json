@@ -5,10 +5,12 @@
   "author": "joaomirandalp <jpedrolp10@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
+    "mongoose": "^5.9.5",
     "nodemon": "^2.0.2"
   }
 }
