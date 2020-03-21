@@ -1,7 +1,7 @@
 {
   "name": "projetoSemanaOmnistack10",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "joaomirandalp <jpedrolp10@hotmail.com>",
   "license": "MIT",
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.9.5",
     "nodemon": "^2.0.2"

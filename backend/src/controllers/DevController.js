@@ -19,7 +19,7 @@ module.exports = {
         let dev = await Dev.findOne({ github_username });
 
         if(!dev) {
-            const { name = login, avatar_url, bio } = resp.data;
+            const { name = github_username, avatar_url, bio } = resp.data;
     
             const techsArray = parseStringAsArray(techs);
         
@@ -28,7 +28,7 @@ module.exports = {
                 coordinates: [longitude, latitude]
             };
         
-            const dev = await Dev.create({
+            dev = await Dev.create({
                github_username,
                name,
                avatar_url,
@@ -37,7 +37,7 @@ module.exports = {
                location,
             });
         }
-
+        
         return response.json(dev);
     }
 };
